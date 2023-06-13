@@ -55,5 +55,27 @@ header .navbar ul li a:hover {
     border-radius: .5rem;
 }
 
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:  #44335E ;
+    display: none;
+}
+
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 2px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li ul li ul {
+    top: 0; left: 200px;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
 
 /*header ends*/
